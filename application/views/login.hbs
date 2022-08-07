@@ -1,0 +1,23 @@
+<form class="input-form" id="login-form" method="POST" action="/users/login" enctype="application/x-www-form-urlencoded"> 
+
+    <h2 id="login-title">Log In</h1>
+
+    <div class="login-content">
+        <label for="username">Username</label>
+        <input type="text" id="login-username" name="username" placeholder="Enter Username" required>
+                    
+        <label for="password">Password</label>
+        <input type="password" id="login-password" name="password" placeholder="Enter Password" required>
+    </div>
+
+    <div class="login-button-section">
+        <button type="submit" id="login-button">Log In</button> 
+    </div>
+
+    <p id="register-divider">or</p>
+
+    <div class="register-link">
+        <label id="register-question"> Don't have an account?</label>
+        <a href="/register">Register</a>
+    </div>
+</form>

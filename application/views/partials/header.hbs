@@ -1,0 +1,28 @@
+<header>
+
+    <nav> 
+        <div class="nav-logo">
+            <h1 id="nav-title"><a href="/">Photo App</a></h1> 
+        </div>
+
+        <div class="form-search">
+            <form id="search-form" method="GET" action="/posts/search" enctype="application/x-www-form-urlencoded" autocomplete="off">            
+                <input type="search" name="searchText" id="search-bar" placeholder="Search">
+            </form>
+        </div>
+        
+        <div class="form-links">
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                {{#if isLoggedIn}}
+                    <li><a id="logout-button">Logout</a></li>
+                {{else}}
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                {{/if}}
+                <li><a href="/post">Post</a></li>
+            </ul>
+        </div> 
+    </nav>
+
+</header>

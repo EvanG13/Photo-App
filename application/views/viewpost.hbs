@@ -1,0 +1,23 @@
+<div class="viewpost-container">
+
+    <div class="view-text-grid">
+        <h1 id="info-title">Photo Information</h1>
+
+        <ul id="info-list">
+
+            <li><h2 id="image-post-title" class="photo-info">{{currentPost.title}}</h2></li> 
+
+            <li><h3 id="image-post-author" class="photo-info">Author: {{currentPost.username}}</h3></li>
+
+            <li><h5 id="image-post-date" class="photo-info">Uploaded: {{formDate currentPost.createdAt}}</h5></li>
+
+            <li><p id="image-post-desc" class="photo-info">Description: {{currentPost.description}}</p></li>
+        </ul> 
+        
+    </div>
+    
+    <div class="view-image-grid">
+        <img id="image-post-image" src="/{{currentPost.photo}}">
+    </div> 
+    
+</div>
